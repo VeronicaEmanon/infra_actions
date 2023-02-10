@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2
         with: 
           push: true
-          tags: descucci/infraacions:latest:v1
+          tags: descucci/infraacions:v1
 
   deploy:
     runs-on: ubuntu-latest
