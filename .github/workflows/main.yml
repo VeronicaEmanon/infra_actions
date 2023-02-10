@@ -57,6 +57,6 @@ deploy:
       key: ${{ secrets.SSH_KEY }}
       passphrase: ${{ secrets.SSH_PASSPHRASE }}
       script: |
-      sudo docker pull desucci/infraactions
+      sudo docker pull desucci/infraactions/v1
       sudo docker stop $(sudo docker ps -a -q)
-      sudo docker run --rm -d -p 5000:5000 descucci/infraactions
+      sudo docker run --rm -d -p 5000:5000 descucci/infraactions/v1
